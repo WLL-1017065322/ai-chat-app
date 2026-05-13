@@ -33,13 +33,11 @@ export default function Page() {
 测试：输入消息能看到流式逐字打印
 
 ## 周三（5.6）：增强体验 + 错误处理
-安装 react-markdown 和 remark-gfm：
-npm install react-markdown remark-gfm
-
-修改消息渲染，将 assistant 消息内容用 Markdown 渲染（代码高亮可选，先不加）
-
-添加简单错误提示：try-catch 包裹前端 handleSubmit，显示 toast 或错误条
-
+安装并集成 Markdown 渲染（支持代码高亮）
+添加加载状态的视觉效果（打字指示器、禁用按钮）
+完善错误处理：网络错误、API 错误、超时等
+添加“停止生成”按钮（中止请求）
+（可选）消息列表自动滚动到底部
 场景测试：断网、API key 失效、超时，观察表现
 
 ## 周四（5.7）：工具调用（简单版）
